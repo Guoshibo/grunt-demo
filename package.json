@@ -4,12 +4,13 @@
   "description": "静态代码检查",
   "main": "rectangle.js",
   "dependencies": {
-    "grunt": "^1.0.3",
     "grunt-contrib-less": "^2.0.0",
     "grunt-htmlhint": "^0.9.13"
   },
   "devDependencies": {
-    "eslint": "^5.15.1"
+    "eslint": "^5.15.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-csslint": "^2.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
