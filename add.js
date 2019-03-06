@@ -1,0 +1,11 @@
+#!/usr/bin/node
+
+const add = require('./sum.js')
+var x = process.argv[2] || 1;
+var y = process.argv[3] || 1;
+console.log(`${x}+${y}=${add(x,y)}`);
+
+
+
+
+

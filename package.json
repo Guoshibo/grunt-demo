@@ -1,0 +1,38 @@
+{
+  "name": "grunt-demo",
+  "version": "1.0.0",
+  "description": "静态代码检查",
+  "main": "add.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "be": "^0.0.3",
+    "chai": "^4.2.0",
+    "eslint": "^5.15.1",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-htmlhint": "^0.9.13",
+    "istanbul": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-mocha-cli": "^4.0.0",
+    "grunt-mocha-istanbul": "^5.0.2",
+    "mocha": "^6.0.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guoshibo/grunt-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guoshibo/grunt-demo/issues"
+  },
+  "homepage": "https://github.com/Guoshibo/grunt-demo#readme"
+}
