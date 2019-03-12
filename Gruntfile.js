@@ -1,18 +1,18 @@
-
 module.exports = function (grunt) {
   grunt.initConfig({
-    mocha: {
-      test: {
-        src: ['test/index.html'],   
+    htmlmin: {
+      options:{
+        collapseWhitespace:true,
+        preserveLineBreaks:false
       },
-      options: {
-        run: true,
-        reporter: 'Dot'  
-      }   
-    }          
-  });
+  files:{
+    src:'.index.html',
+    dest:'dist/index.html'
+  }
+}
+});
 
-    grunt.loadNpmTasks('grunt-mocha');
-    grunt.registerTask('default', ['mocha']);
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.registerTask('default', ['htmlmin']);
 
 };
