@@ -1,18 +1,18 @@
 
 module.exports = function (grunt) {
   grunt.initConfig({
-    mocha: {
-      test: {
-        src: ['test/index.html'],   
+    concat: {
+      dist: {
+        src: ['rectangle.js','calc.js'],
+        dest:'dist/bundle.js'
       },
       options: {
-        run: true,
-        reporter: 'Dot'  
+        separator:''
       }   
     }          
   });
 
-    grunt.loadNpmTasks('grunt-mocha');
-    grunt.registerTask('default', ['mocha']);
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.registerTask('default', ['concat']);
 
 };
